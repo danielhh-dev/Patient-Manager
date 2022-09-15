@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className=" mt-12 md:flex">
         <Form pacientes={pacientes} setPacientes={setPacientes} />
-        <PatientList />
+        <PatientList pacientes={pacientes}/>
       </div>
     </div>
   );

@@ -1,17 +1,28 @@
 import { useState } from "react";
 import Error from "./Error";
 
-const initialForm = {
-  mascota: "",
-  propietario: "",
-  email: "",
-  alta: "",
-  sintomas: "",
-};
+
 
 const Form = ({ pacientes, setPacientes }) => {
-  const [form, setForm] = useState(initialForm);
+
+  const generarId = () => {
+    const random = Math.random().toString(36).substring(2);
+    const fecha = Date.now().toString(36);
+  
+    return random + fecha;
+  };
+  
+  const initialForm = {
+    mascota: "",
+    propietario: "",
+    email: "",
+    alta: "",
+    sintomas: "",
+    id: generarId(),
+  };
+
   const [error, setError] = useState(false);
+  const [form, setForm] = useState(initialForm);
 
   const handleChange = (e) => {
     setForm({
@@ -27,11 +38,7 @@ const Form = ({ pacientes, setPacientes }) => {
       return;
     }
 
-
-    setPacientes([
-      ...pacientes,    
-      form
-    ])
+    setPacientes([...pacientes, form]);
     setError(false);
     handleReset();
   };
@@ -51,7 +58,7 @@ const Form = ({ pacientes, setPacientes }) => {
         className="bg-white shadow-md rounded-xl py-10 px-5 mb-10"
         onSubmit={handleSubmit}
       >
-        {error && <Error mensaje={'Todos los campos son obligatorios'}/>}
+        {error && <Error mensaje={"Todos los campos son obligatorios"} />}
         <div className="mb-5">
           <input
             name="mascota"

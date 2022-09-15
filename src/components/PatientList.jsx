@@ -1,29 +1,29 @@
-import Patient from "./Patient"
+import Hello from "./Hello";
+import Patient from "./Patient";
 
-const PatientList = () => {
+const PatientList = ({ pacientes }) => {
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll scrollbar-hide">
-      <h2 className="font-black text-3xl text-center">Listado de Pacientes</h2>
-      
+      {pacientes.length > 0 ? (
+        <h2 className="font-black text-3xl text-center">
+          Listado de Pacientes
+        </h2>
+      ) : (
+        <h2 className="font-black text-3xl text-center">No hay Pacientes</h2>
+      )}
+
       <p className="text-lg mt-5 mb-10 text-center">
-        Administra tus {" "} 
+        Administra tus{" "}
         <span className="text-indigo-500 font-bold">Pacientes y Citas</span>
       </p>
-      <Patient />
-      <Patient />
-
-      <Patient />
-
-      <Patient />
-
-      <Patient />
-
-      <Patient />
-
-      <Patient />
-
+      {
+        pacientes.map((element) => (
+          <Patient key={element.id} element={element} />
+        ))
+        // <Patient key={element.id} element={element} />;
+      }
     </div>
-  )
-}
+  );
+};
 
-export default PatientList
+export default PatientList;
