@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import Patient from "./Patient";
 
-const PatientList = ({ pacientes, setPaciente}) => {
+const PatientList = ({ pacientes, setPaciente }) => {
+  
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll scrollbar-hide">
       {pacientes.length ? (

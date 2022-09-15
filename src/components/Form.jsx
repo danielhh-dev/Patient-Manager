@@ -1,17 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Error from "./Error";
 
-
-
-const Form = ({ pacientes, setPacientes }) => {
-
+const Form = ({ pacientes, setPacientes, paciente }) => {
   const generarId = () => {
     const random = Math.random().toString(36).substring(2);
     const fecha = Date.now().toString(36);
-  
+
     return random + fecha;
   };
-  
+
   const initialForm = {
     mascota: "",
     propietario: "",
@@ -23,6 +20,19 @@ const Form = ({ pacientes, setPacientes }) => {
 
   const [error, setError] = useState(false);
   const [form, setForm] = useState(initialForm);
+
+  useEffect( () => {
+    if (Object.keys(paciente).length > 0) {
+      setForm({
+        mascota: paciente.mascota,
+        propietario: paciente.propietario,
+        email: paciente.email,
+        alta: paciente.alta,
+        sintomas: paciente.sintomas,
+        id: paciente.id,
+      })
+    }
+  },[paciente]);
 
   const handleChange = (e) => {
     setForm({
