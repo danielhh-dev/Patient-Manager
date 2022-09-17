@@ -20,7 +20,12 @@ const Form = ({ pacientes, setPacientes, paciente }) => {
 
   const [error, setError] = useState(false);
   const [form, setForm] = useState(initialForm);
+  
 
+  //Cuando editamos un paciente ese objeto se manda a la app 
+  //para que la reciba Form como prop y la pueda mostrar pero
+  //ahora para editar la informacion del objeto, esto lo hace 
+  //el effect seteando la informacion en el form 
   useEffect( () => {
     if (Object.keys(paciente).length > 0) {
       setForm({
