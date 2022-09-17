@@ -1,25 +1,22 @@
-<h1 align="center">Welcome to Patient-Manager 👋</h1>
+<h1 align="center">Welcome to Patient Manager 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
 
-> This is a CRUD sample using technologies like HTML, CSS, JavaScript and React
+> Dynamic website simulating a patient manager of a vet clinic, using React & Tailwind
 
-## Install
-
-```sh
-npm install
-```
+### 🏠 [Homepage](https://danielhh-dev.github.io/Patient-Manager/)
 
 ## Author
 
 👤 **Daniel Hernandez**
 
+* Website: https://danielhh-dev.github.io/PORTOFOLIO/
 * Github: [@danielhh-dev](https://github.com/danielhh-dev)
-* LinkedIn: [@danielhhdev](https://linkedin.com/in/danielhhdev)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/danielhhdev\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/danielhhdev\/)
 
 ## Show your support
 
