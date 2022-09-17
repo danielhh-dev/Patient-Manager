@@ -16,7 +16,7 @@
 
 * Website: https://danielhh-dev.github.io/PORTOFOLIO/
 * Github: [@danielhh-dev](https://github.com/danielhh-dev)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/danielhhdev\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/danielhhdev\/)
+* LinkedIn: [@danielhhdev](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/danielhhdev\/)
 
 ## Show your support
 
