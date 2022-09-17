@@ -22,5 +22,7 @@
 
 Give a ⭐️ if this project helped you!
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+## 📝 License
+
+Copyright © 2022 [Daniel Hernandez](https://github.com/danielhh-dev).<br />
+This project is [MIT](https://github.com/danielhh-dev/Batata/blob/master/LICENSE) licensed.
