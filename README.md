@@ -19,8 +19,6 @@
 ## Author
 
 👤 **Daniel Hernandez**
-
-* Website: https://danielhh-dev.github.io/PORTOFOLIO/
 * Github: [@danielhh-dev](https://github.com/danielhh-dev)
 * LinkedIn: [@danielhhdev](https://linkedin.com/in/danielhhdev/)
 
